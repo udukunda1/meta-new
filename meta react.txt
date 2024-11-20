@@ -1,0 +1,75 @@
+- up to now to be able to re render it require to use state(understood).
+
+- The props object represents data that is external to a component, and state represents data that is internal to a component. (if you want to use state outside the component you pass it as props to other components).
+
+- to avoid prop drilling we use context API.
+
+-lift up is crucial and necessary because often two child components may need to pass state between them then since they don't have direct connection we lift up state to parent to be able to then pass it to child.
+
+-react-player : media package used to work with audios and videos in react .
+
+-map() : returns new modified array, apply function to modify elements. {m.map(a => a*3)}
+-filter() : returns new array , apply function to filter out some elements.{m.filter(a => a>5)}.
+-foreach() :neither modify array nor return new one but apply function to perform specific task {ex: console elements multiplied by 2)
+
+-JSX renders array as plain joined string.
+
+-in onChange event handler , the parameter means the event that triggered the handler hence parameter.target is targeting that event and parameter.target.value returns the value in the textbox that triggered that event as value is among attributes of input that hold the <input> value.
+
+- a controlled component in React is a component where the form elements (like inputs, textareas, selects) are controlled by the React state.
+
+-in an object if you give a key two values then the last one is one it will hold on.
+
+-onFocus attribute on input checks if checkbox is focused or has ever been focused while onBlur check if it currently not focused but has been.
+
+
+- https://formik.org/    is the most popular open source form library for React. It saves you lots of time when building forms and offers a declarative, intuitive and adoptable paradigm. 
+
+
+-prop drilling: passing data through all components tree levels(even those that don't need it).
+
+
+-div + p
+This selector targets a <p> (paragraph) element that is immediately preceded by a <div> element (adjacent sibling).
+
+-components with open and closing tag are components that take nested content{children} as props.(important: You can provide JSX elements as children to display nested components).
+
+- The useEffect hook is one of the most essential hooks in React, used to manage side effects in functional components. Side effects can include operations like data fetching, subscriptions, manually changing the DOM, and updating state based on props. (used to manage when components re-render especially given same values).
+
+- The useMemo hook is used for performance optimization by memoizing expensive calculations. It helps prevent unnecessary re-calculations of values that do not change between renders, thus improving the efficiency of your component.
+
+-context API allows for global state management within a React application, making it easier to manage and access shared data across various components. This is especially useful for themes, authentication status, language...
+
+- The useState hook in React returns an array with two elements:
+
+    State: The current state.
+    set Function: A function to set new state , new state is argument given to the function.
+
+- The useReducer hook in React returns an array with two elements:
+
+    State: The current state ..
+    Dispatch Function: A function to set the new state , new state is return value from defined reducer function given the argument (object also called actiom object).
+
+
+    *reducer: A function that determines how the state changes in response to an action. It takes the current state and an action object   as arguments and returns the new state.
+
+-The children prop in React is a powerful feature that allows you to pass elements or components{props} as children to a parent component.
+
+-I've observed that if you make a component better work along it's style.  (better with styled component);
+
+-higher order component  (HOC): An HOC is a pure function with zero side effects. It doesn’t modify the original component but creates a new one that wraps it. This new component can enhance or modify the behavior of the original component.
+
+-Render Props :This function, known as the "render prop," receives arguments that provide data or functionality to the returned element.
+
+-HOC:  HOCs are commonly used to inject additional props or to wrap the component with additional logic.
+
+-Render props provide the new data as a function parameter, whereas components wrapped with an HOC get the new data as a new prop. 
+
+-they are just two different implementations for encapsulating cross-cutting concerns, but they serve the same purpose.
+-destructuring object we use the same name as original one ; ex: ob ={a: 2, b: 3, c: 4}    then  {a ,b ,...rest} = ob  means a = 2 and b = 3;
+
+
+-Chakra UI is a simple, modular, and accessible component library that provides a set of building blocks for building React applications. 
+
+
+-Formik and Yup are popular libraries often used together in React applications for handling form state, validation, and submission.
